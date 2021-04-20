@@ -3,12 +3,12 @@
     using System;
 	using UnityEngine;
 	using GameCreator.Variables;
-	using HeathenEngineering.SteamApi.Foundation;
+	using HeathenEngineering.SteamAPI
 
 	[AddComponentMenu("")]
 	public class SteamAchivementUnlock :  IAction
 	{
-		public SteamAchievementData SteamAchievementToUnlock;
+		public AchievementObject SteamAchievementToUnlock;
 
 
 		public override bool InstantExecute(GameObject invoker, IAction[] actions, int index)
