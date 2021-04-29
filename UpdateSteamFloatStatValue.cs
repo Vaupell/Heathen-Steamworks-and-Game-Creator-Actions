@@ -3,17 +3,17 @@ namespace GameCreator.Core
     using System;
     using UnityEngine;
     using GameCreator.Variables;
-    using HeathenEngineering.SteamApi.Foundation;
+    using HeathenEngineering.SteamAPI;
 
 #if UNITY_EDITOR
     using UnityEditor;
 #endif
 
     [AddComponentMenu("")]
-    public class UpdateSteamStatValue : IAction
+    public class UpdateSteamIntStatValue : IAction
     {
 
-        public SteamIntStatData StatToUpdate;
+        public FloatStatObject StatToUpdate;
         public NumberProperty MVStatTime = new NumberProperty(0.0f);
 
         private void Start()
@@ -21,13 +21,13 @@ namespace GameCreator.Core
 
         }
 
-        public void UpdateMyStat(int NewIntValue)
+        public void UpdateMyStat(float value)
         {
-            StatToUpdate.SetIntStat(NewIntValue);
+            StatToUpdate.Value = value;
         }
 
 #if UNITY_EDITOR
-        public static new string NAME = "MVT/Heathen/Update Steam Stat";
+        public static new string NAME = "MVT/Heathen/Update Steam Float Stat";
 #endif
     }
 }
