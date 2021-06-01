@@ -10,7 +10,7 @@ namespace GameCreator.Core
 #endif
 
     [AddComponentMenu("")]
-    public class UpdateSteamIntStatValue : IAction
+    public class UpdateSteamFloatStatValue : IAction
     {
 
         public FloatStatObject StatToUpdate;
