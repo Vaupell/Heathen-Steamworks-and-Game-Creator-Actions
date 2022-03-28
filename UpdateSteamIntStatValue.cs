@@ -3,7 +3,7 @@ namespace GameCreator.Core
     using System;
     using UnityEngine;
     using GameCreator.Variables;
-    using HeathenEngineering.SteamAPI;
+    using HeathenEngineering.SteamworksIntegration;
 
 #if UNITY_EDITOR
     using UnityEditor;
