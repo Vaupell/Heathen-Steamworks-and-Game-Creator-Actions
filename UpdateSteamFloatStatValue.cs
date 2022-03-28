@@ -3,14 +3,14 @@ namespace GameCreator.Core
     using System;
     using UnityEngine;
     using GameCreator.Variables;
-    using HeathenEngineering.SteamAPI;
+    using HeathenEngineering.SteamworksIntegration;
 
 #if UNITY_EDITOR
     using UnityEditor;
 #endif
 
     [AddComponentMenu("")]
-    public class UpdateSteamIntStatValue : IAction
+    public class UpdateSteamFloatStatValue : IAction
     {
 
         public FloatStatObject StatToUpdate;
